@@ -3,3 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: black;
+}
+
+.header__container{
+    margin: 10px;
+}
+
+.header__container button{
+    background-color: rgb(61, 60, 60);
+    color: white;
+    padding: 5px 5px;
+    float: right;
+}

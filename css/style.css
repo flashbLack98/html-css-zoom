@@ -48,7 +48,7 @@ body{
     position: relative;
 }
 
-.user:nth-last-child(6){
+.user:hover{
     border: 5px greenyellow solid;
 }
 
@@ -64,9 +64,10 @@ body{
     position: absolute;
     bottom: 5px;
     left: 0;
-    background-color: gray;
+    background-color: grey;
+    opacity: 80%;
+    
 }
-
 .user__name i{
     color: red;
 }
@@ -115,10 +116,18 @@ body{
     margin-left: 15px;
     display: inline-block;
     vertical-align: middle;
+    min-height:10px ;
+    position: relative;
 }
 
+.footer__link-container:hover{
+    background-color: grey;
+    border-radius: 10px;
+}
+
+
 .footer__link-icon i{
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 5px;
 }
 
@@ -126,6 +135,11 @@ body{
     color: greenyellow;
 }
 
+.number__partecipant{
+    position: absolute;
+    top: 10px;
+    right: 35px;
+}
 
 .footer__link-arrow{
     display: inline-block;
@@ -137,13 +151,19 @@ body{
 
 
 .footer__end-button{
-    background-color: #403c3c;
     text-align: center; 
-    padding: 3vh 10px;
     font-weight: bold;   
 }
 
 .footer__link--right a{
     text-decoration: none;
     color: red;
+    padding: 0 10px;
+}
+
+.footer__link--right a:hover{
+    background-color: #403c3c;
+    padding: 3vh 10px;
+    border-radius: 10px;
+    
 }

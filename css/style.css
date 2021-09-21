@@ -8,13 +8,142 @@ body{
     background-color: black;
 }
 
+
+/* HEADER */
 .header__container{
-    margin: 10px;
+    height: 10vh;
+    text-align: right;
 }
+
 
 .header__container button{
     background-color: rgb(61, 60, 60);
     color: white;
     padding: 5px 5px;
-    float: right;
+    margin: 20px 5px 20px 0;
+}
+/* FINE HEADER */
+
+/* MAIN */
+.main__container{
+    position: relative;
+    height: 100%;
+}
+
+
+.main__user-container{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 80vh;
+}
+
+.user{
+    width:260px;
+    height: 140px;
+    border: 5px solid black;
+    color: white;
+    position: relative;
+}
+
+.user:nth-last-child(6){
+    border: 5px greenyellow solid;
+}
+
+.user img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position:center;
+    overflow: hidden;
+}
+
+.user__name{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    background-color: gray;
+}
+
+.user__name i{
+    color: red;
+}
+
+.main__arrow--left {
+    position: absolute;
+    top: 40vh;
+    left:50px;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.main__arrow--left i{
+    font-size: xxx-large;
+}
+
+.main__arrow--right {
+    position: absolute;
+    top: 40vh;
+    right:50px;
+    transform: translate(50%, -50%);
+    color: white;
+}
+
+.main__arrow--right i{
+    font-size: xxx-large;
+    color: blue;
+}
+/* FINE MAIN */
+
+.footer__container{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #232427;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__link-container{
+    color: lightgray;
+    text-align: center;
+    padding: 10px 10px;
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer__link-icon i{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.footer__link-icon--green{
+    color: greenyellow;
+}
+
+
+.footer__link-arrow{
+    display: inline-block;
+    font-size: 15px;
+    color:white;
+    margin-left: 5px;
+}
+
+
+
+.footer__end-button{
+    background-color: #403c3c;
+    text-align: center; 
+    padding: 3vh 10px;
+    font-weight: bold;   
+}
+
+.footer__link--right a{
+    text-decoration: none;
+    color: red;
 }
